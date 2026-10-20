@@ -1,14 +1,132 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Events | CampusConnect</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header"><a class="logo" href="index.html">Campus<span>Connect</span></a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a class="current" href="events.html">Events</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>
-<main class="wrap page"><p class="eyebrow">THE CAMPUS CALENDAR</p><h1>Explore events</h1><p class="intro">Search by event name or filter by category to find your next campus activity.</p>
-<div class="filters"><label class="search-box">⌕ <input id="searchInput" type="search" placeholder="Search events..." aria-label="Search events"></label><label class="filter-label">Category <select id="categoryFilter"><option value="all">All categories</option><option value="tech">Technology</option><option value="career">Career</option><option value="culture">Culture</option><option value="wellness">Wellness</option></select></label></div>
-<p id="resultCount" class="result-count" aria-live="polite"></p>
-<div class="event-list" id="eventList">
-<article class="event-row" id="web-workshop" data-category="tech" data-search="build your first website html css coding workshop"><div class="date-tile"><b>12</b><span>NOV</span></div><div class="row-art art-blue">⌘</div><div class="row-content"><span class="pill">Technology</span><h2>Build Your First Website</h2><p>A beginner-friendly HTML and CSS workshop. Bring your laptop and build a simple page.</p><span class="meta">10:00 AM · Computer Lab 2</span></div><button class="button register-btn" data-event="Build Your First Website">Register interest</button></article>
-<article class="event-row" id="ai-talk" data-category="career" data-search="career paths in ai artificial intelligence industry talk"><div class="date-tile"><b>15</b><span>NOV</span></div><div class="row-art art-orange">✳</div><div class="row-content"><span class="pill">Career</span><h2>Career Paths in AI</h2><p>Learn about roles, practical skills, and how to begin a career in AI.</p><span class="meta">2:00 PM · Seminar Hall</span></div><button class="button register-btn" data-event="Career Paths in AI">Register interest</button></article>
-<article class="event-row" id="open-mic" data-category="culture" data-search="campus open mic music poetry performance culture"><div class="date-tile"><b>18</b><span>NOV</span></div><div class="row-art art-green">♫</div><div class="row-content"><span class="pill">Culture</span><h2>Campus Open Mic</h2><p>An open stage for music, poetry, comedy, and creative performances.</p><span class="meta">4:00 PM · Student Courtyard</span></div><button class="button register-btn" data-event="Campus Open Mic">Register interest</button></article>
-<article class="event-row" id="wellness-day" data-category="wellness" data-search="mindfulness wellness wellbeing yoga session"><div class="date-tile"><b>21</b><span>NOV</span></div><div class="row-art art-purple">☼</div><div class="row-content"><span class="pill">Wellness</span><h2>Mindful Moments</h2><p>A relaxed session with simple mindfulness exercises and wellness tips.</p><span class="meta">9:30 AM · Activity Room</span></div><button class="button register-btn" data-event="Mindful Moments">Register interest</button></article>
-</div><p id="noResults" class="empty hidden">No events match your search. Try another keyword or category.</p>
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-</main><footer class="footer"><a class="logo" href="index.html">Campus<span>Connect</span></a><p>Academic demo project · Student Event Hub</p><div><a href="about.html">About</a><a href="contact.html">Contact</a></div></footer><script src="script.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | CampusConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">
+    Campus<span>Connect</span>
+  </a>
+
+  <button class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false">☰</button>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a class="current" href="events.html">Events</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero wrap">
+    <p class="eyebrow">EXPLORE YOUR CAMPUS</p>
+    <h1>Discover <span>Events.</span></h1>
+    <p>
+      Find workshops, technology talks, career sessions,
+      and cultural activities happening around campus.
+    </p>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">WHAT'S HAPPENING</p>
+        <h2>Upcoming Events</h2>
+      </div>
+      <a class="text-link" href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="event-card" id="web-workshop">
+        <div class="event-art art-blue">
+          <span>TECH</span>
+          <strong>01</strong>
+        </div>
+        <div class="event-body">
+          <p class="meta">WORKSHOP · 10:00 AM</p>
+          <h3>Build Your First Website</h3>
+          <p>
+            Learn the basics of HTML and CSS and create
+            your first simple website.
+          </p>
+          <p><strong>Category:</strong> Technology</p>
+          <a href="contact.html">Know More ↗</a>
+        </div>
+      </article>
+
+      <article class="event-card" id="ai-talk">
+        <div class="event-art art-orange">
+          <span>CAREER</span>
+          <strong>02</strong>
+        </div>
+        <div class="event-body">
+          <p class="meta">TALK · 2:00 PM</p>
+          <h3>Career Paths in AI</h3>
+          <p>
+            Explore artificial intelligence, machine
+            learning, career options, and essential skills.
+          </p>
+          <p><strong>Category:</strong> Career</p>
+          <a href="contact.html">Know More ↗</a>
+        </div>
+      </article>
+
+      <article class="event-card" id="open-mic">
+        <div class="event-art art-green">
+          <span>CULTURE</span>
+          <strong>03</strong>
+        </div>
+        <div class="event-body">
+          <p class="meta">MEETUP · 4:00 PM</p>
+          <h3>Campus Open Mic</h3>
+          <p>
+            Share music, poetry, comedy, and creative
+            performances with fellow students.
+          </p>
+          <p><strong>Category:</strong> Cultural</p>
+          <a href="contact.html">Know More ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="cta wrap">
+    <div>
+      <p class="eyebrow">JOIN THE COMMUNITY</p>
+      <h2>Be part of campus life.</h2>
+      <p>
+        Connect with students and discover new
+        opportunities to learn and grow.
+      </p>
+    </div>
+    <a class="button button-light" href="contact.html">
+      Contact Us →
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="logo" href="index.html">
+    Campus<span>Connect</span>
+  </a>
+  <p>Academic demo project · Student Event Hub</p>
+  <div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
